@@ -1,0 +1,21 @@
+{
+  "name": "cwstaking",
+  "version": "1.0.0",
+  "dependencies": {
+    "@cosmjs/cli": "^0.26.0",
+    "@iboss/terrain": "0.0.8"
+  },
+  "workspaces": [
+    "frontend"
+  ],
+  "author": "",
+  "license": "ISC",
+  "main": "keys.terrain.js",
+  "directories": {
+    "lib": "lib"
+  },
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "description": ""
+}

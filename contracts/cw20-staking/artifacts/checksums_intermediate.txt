@@ -1,0 +1,1 @@
+84133ab7217cdf1395ad750ff5651d85dc721f685ba8c7c71adb7684de48d46e  ./target/wasm32-unknown-unknown/release/cw20_staking.wasm

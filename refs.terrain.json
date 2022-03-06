@@ -1,0 +1,10 @@
+{
+  "localterra": {
+    "cw20-base": {
+      "codeId": "6"
+    },
+    "cw20-staking": {
+      "codeId": "9"
+    }
+  }
+}
