@@ -17,7 +17,20 @@
           }
         },
         "instantiateMsg": {
-          "count": 0
+          "name": "Cool",
+          "symbol": "WUT",
+          "decimals": 3,
+          "initial_balances": [
+            {
+              "address": "terra1ccgfzama5y26es8xhlhcswtp76e9jcddhqhchl",
+              "amount": "50000"
+            }
+          ],
+          "mint": {
+            "minter": "terra1t3gt92tpgm7dzqcf2dp3n3gncvzfjgech84h8u",
+            "cap": "511223344"
+          },
+          "marketing": null
         }
       }
     }
