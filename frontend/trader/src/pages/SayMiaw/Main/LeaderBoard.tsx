@@ -81,7 +81,7 @@ const LeaderBoard = ({
     <StyledContainer>
       <Row style={{ paddingBottom: 20, alignItems: 'center' }}>
         <View style={{ flex: 1 }}>
-          <FormText fontType="B24">Miawer board</FormText>
+          <FormText fontType="B24">WUT board</FormText>
         </View>
         {closeModal && <IconX onClick={closeModal} size={24} />}
       </Row>
@@ -98,7 +98,7 @@ const LeaderBoard = ({
 
             <FormText fontType="B14">{`${UTIL.formatAmount(
               `${item.amount}` as uToken
-            )} MIAW`}</FormText>
+            )} WUT`}</FormText>
           </StyledItemBox>
         )
       })}

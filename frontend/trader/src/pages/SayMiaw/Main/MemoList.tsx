@@ -67,7 +67,7 @@ const MemoItem = ({ burnData }: { burnData: BurnDataType }): ReactElement => {
               fontType="R12"
               style={{ paddingRight: 5, color: COLOR.error }}
             >
-              {`Burned ${UTIL.formatAmount(burnData.burnAmount)} MIAW! `}
+              {`Burned ${UTIL.formatAmount(burnData.burnAmount)} WUT! `}
             </FormText>
           }
         />

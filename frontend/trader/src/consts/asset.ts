@@ -1,6 +1,6 @@
 import { TokenDenomEnum, TokenSymbolEnum } from 'types'
 
-const TERRA_DECIMAL = 1e6
+const TERRA_DECIMAL = 1e3
 
 const symbolOfDenom: Record<TokenDenomEnum, TokenSymbolEnum> = {
   [TokenDenomEnum.uusd]: TokenSymbolEnum.UST,

@@ -65,7 +65,7 @@ const LpStakeForm = ({
       <StyledSection>
         <View>
           <FormInput
-            suffix={isMobileWidth ? 'LP' : 'MIAW-UST LP'}
+            suffix={isMobileWidth ? 'LP' : 'WUT-UST LP'}
             onChangeValue={(value): void => {
               setLpTokenAmount(value as LP)
             }}

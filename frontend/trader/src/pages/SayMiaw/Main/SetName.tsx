@@ -39,8 +39,8 @@ const SetName = ({ wutToken }: { wutToken: TokenType }): ReactElement => {
                   maxLength: 60,
                   value: inputName,
                   placeholder: hasName
-                    ? '500 MIAW for change name'
-                    : '1 MIAW for init name',
+                    ? '500 WUT for change name'
+                    : '1 WUT for init name',
                 }}
                 onChangeValue={setInputName}
               />

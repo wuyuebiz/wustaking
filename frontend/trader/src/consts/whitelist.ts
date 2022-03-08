@@ -1106,7 +1106,7 @@ const testnetLpStakingList: LpStakingType[] = [
 ]
 
 const address = {
-  wutDeveloper: 'terra1mxwpyavs4v5rpwndh3uc90e3qaw2wqqndnmt3j',
+  wutDeveloper: 'terra1t3gt92tpgm7dzqcf2dp3n3gncvzfjgech84h8u',
 }
 
 const mainnetLimitOrder =

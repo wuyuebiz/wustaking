@@ -45,37 +45,23 @@ const Main = (): ReactElement => {
       <StyledMainTitle fontType="B32">Miaw paper</StyledMainTitle>
       <StyledCard>
         <StyledSection>
-          <StyledSubTitle fontType="B24">What the MIAW</StyledSubTitle>
+          <StyledSubTitle fontType="B24">What the WUT</StyledSubTitle>
           <StyledDesc>
-            <LinkA link="https://github.com/miaw-team">
+            <LinkA link="https://github.com/wuyuebiz/wustaking">
               <FormText fontType={'R18'} color={COLOR.primary._400}>
                 - Open source project
               </FormText>
             </LinkA>
           </StyledDesc>
           <StyledDesc>
-            <LinkA link="https://github.com/miaw-team/miaw-trader">
-              <FormText fontType={'R18'} color={COLOR.primary._400}>
-                * miaw-trader scource code
-              </FormText>
-            </LinkA>
-          </StyledDesc>
-          <StyledDesc>
-            <LinkA link="https://github.com/miaw-team/miaw-lp-staking">
-              <FormText fontType={'R18'} color={COLOR.primary._400}>
-                * lp staking contract scource code
-              </FormText>
-            </LinkA>
-          </StyledDesc>
-          <StyledDesc>
             - Token,Lp,Pair contracts are based on The Terraswap factory
           </StyledDesc>
-          <StyledDesc>- MIAW was made by a dev who loves the Terra</StyledDesc>
+          <StyledDesc>- WUT was made by a dev who loves the Terra</StyledDesc>
         </StyledSection>
 
         <StyledSection>
           <StyledSubTitle fontType="B24">
-            Token Distribution plan for MIAW V1
+            Token Distribution plan for WUT V1
           </StyledSubTitle>
           <StyledDesc fontType="B20">100M Total supply</StyledDesc>
           <StyledDesc>
@@ -88,9 +74,9 @@ const Main = (): ReactElement => {
         </StyledSection>
 
         <StyledSection>
-          <StyledSubTitle fontType="B24">Roadmap for MIAW V1</StyledSubTitle>
+          <StyledSubTitle fontType="B24">Roadmap for WUT V1</StyledSubTitle>
           <StyledDesc>
-            <IconSquareCheck color={COLOR.primary._600} /> SayMiaw
+            <IconSquareCheck color={COLOR.primary._600} /> SayWUT
           </StyledDesc>
           <StyledDesc>
             <IconSquareCheck color={COLOR.primary._600} /> LpTower
@@ -115,19 +101,19 @@ const Main = (): ReactElement => {
 
         <StyledSection>
           <StyledSubTitle fontType="B24">Keeping token prices</StyledSubTitle>
-          <StyledDesc fontType="B18">1. SayMiaw</StyledDesc>
+          <StyledDesc fontType="B18">1. SayWUT</StyledDesc>
           <StyledDesc>
-            {'-> Burn MIAW through SayMiaw with various events'}
+            {'-> Burn WUT through SayWUT with various events'}
           </StyledDesc>
           <StyledDesc fontType="B18">2. Miawaifu NFT</StyledDesc>
           <StyledDesc>{'-> Supply lp with Miawaifu sales proceeds'}</StyledDesc>
           <StyledDesc fontType="B18">3. NFT Trader</StyledDesc>
-          <StyledDesc>{'-> Burn MIAW to upload nft'}</StyledDesc>
+          <StyledDesc>{'-> Burn WUT to upload nft'}</StyledDesc>
           <StyledDesc>{'-> Supply lp with nft trading fee'}</StyledDesc>
         </StyledSection>
 
         <StyledSection>
-          <StyledSubTitle fontType="B24">MIAW V2?</StyledSubTitle>
+          <StyledSubTitle fontType="B24">WUT V2?</StyledSubTitle>
           <StyledDesc>
             - Supporting token swap independently without the Terraswap
           </StyledDesc>
@@ -137,14 +123,14 @@ const Main = (): ReactElement => {
         <StyledSection>
           <StyledSubTitle fontType="B24">Need support?</StyledSubTitle>
           <StyledDesc>
-            <LinkA link="https://discord.gg/W4HkFYq4AE">
+            <LinkA link="https://discord.gg/QuNNPHHV">
               <FormText fontType={'R18'} color={COLOR.primary._400}>
                 - Discord
               </FormText>
             </LinkA>
           </StyledDesc>
           <StyledDesc>
-            <LinkA link="https://github.com/miaw-cat/miaw-trader/issues">
+            <LinkA link="https://github.com/wuyuebiz/wustaking/issues">
               <FormText fontType={'R18'} color={COLOR.primary._400}>
                 - Github issues
               </FormText>

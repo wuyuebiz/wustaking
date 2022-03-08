@@ -107,7 +107,7 @@ const Main = (): ReactElement => {
     <Contents wutToken={wutToken} />
   ) : (
     <StyledContainer>
-      <FormText fontType="B32">{`MIAW token is not ready ${STYLE.CAT_EMOJI}`}</FormText>
+      <FormText fontType="B32">{`WUT token is not ready ${STYLE.CAT_EMOJI}`}</FormText>
     </StyledContainer>
   )
 }

@@ -27,7 +27,7 @@ const TopInfo = ({ wutToken }: { wutToken: TokenType }): ReactElement => {
   const sayMiawReturn = useSayMiaw({ wutToken })
   const { name } = useMyName()
 
-  const { balance: myMiaw } = useMyBalance({
+  const { balance: myWUT } = useMyBalance({
     contractOrDenom: wutToken.contractOrDenom,
   })
 
@@ -43,7 +43,7 @@ const TopInfo = ({ wutToken }: { wutToken: TokenType }): ReactElement => {
         </FormText>
         <FormText fontType="B18" color={COLOR.gray._100}>{`${UTIL.formatAmount(
           sayMiawReturn.burnedAmount
-        )} MIAW ( ≒  ${UTIL.formatAmount(sayMiawReturn.burnedPrice, {
+        )} WUT ( ≒  ${UTIL.formatAmount(sayMiawReturn.burnedPrice, {
           toFix: 0,
         })} UST )`}</FormText>
       </StyledTotalBurnedBox>
@@ -51,7 +51,7 @@ const TopInfo = ({ wutToken }: { wutToken: TokenType }): ReactElement => {
         <FormText
           fontType="R16"
           color={COLOR.gray._100}
-        >{`My MIAW : ${UTIL.formatAmount(myMiaw)}`}</FormText>
+        >{`My WUT : ${UTIL.formatAmount(myWUT)}`}</FormText>
         <FormText
           fontType="R16"
           color={COLOR.gray._100}

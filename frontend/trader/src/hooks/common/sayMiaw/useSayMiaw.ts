@@ -128,7 +128,7 @@ const useSayMiaw = ({
   const memoOptions = [
     // {
     //   value: SayOptionEnum.PLACEBO_RAFFLE_1,
-    //   label: `${getAmount(SayOptionEnum.PLACEBO_RAFFLE_1)} MIAW PLACEBO RAFFLE`,
+    //   label: `${getAmount(SayOptionEnum.PLACEBO_RAFFLE_1)} WUT PLACEBO RAFFLE`,
     // },
     {
       value: SayOptionEnum.rank_7,

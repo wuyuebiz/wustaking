@@ -24,7 +24,7 @@ const Main = (): ReactElement => {
       {wutToken ? (
         <Send token={wutToken} />
       ) : (
-        <FormText fontType="B32">MIAW token is not ready</FormText>
+        <FormText fontType="B32">WUT token is not ready</FormText>
       )}
     </StyledContainer>
   )
