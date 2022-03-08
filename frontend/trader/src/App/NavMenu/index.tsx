@@ -10,10 +10,12 @@ import Wallet from './Wallet'
 const StyledContainer = styled(Row)`
   position: relative;
   min-width: 140px;
-  padding: 16px 42px;
+  min-height: 64px;
   align-items: center;
   justify-content: space-between;
-
+  border-bottom: 1px solid rgb(236, 239, 241);
+  background: white;
+  
   @media ${STYLE.media.tablet} {
     height: 60px;
     padding: 0 16px;

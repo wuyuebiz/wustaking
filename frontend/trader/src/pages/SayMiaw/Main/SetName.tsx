@@ -47,7 +47,6 @@ const SetName = ({ wutToken }: { wutToken: TokenType }): ReactElement => {
             </View>
             <View style={{ flex: 1 }}>
               <AuthButton
-                style={{ borderRadius: 5, padding: '0 10px' }}
                 onClick={onClickSave}
                 disabled={invalidForm || !inputName}
               >

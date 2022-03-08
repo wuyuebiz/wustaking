@@ -99,7 +99,6 @@ const InputMemo = ({
             </View>
             <View style={{ flex: 1 }}>
               <AuthButton
-                style={{ borderRadius: 5, padding: '0 10px' }}
                 onClick={onClickWUT}
                 disabled={invalidForm || !inputMemo}
               >

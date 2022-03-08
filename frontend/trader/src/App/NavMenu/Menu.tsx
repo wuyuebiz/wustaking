@@ -3,7 +3,7 @@ import styled from 'styled-components'
 import _ from 'lodash'
 import { useLocation } from 'react-router-dom'
 
-import logo from 'images/miaw/cat_logo.png'
+import logo from 'images/minion.png'
 
 import { COLOR, STYLE } from 'consts'
 
@@ -16,6 +16,7 @@ import { IconChevronDown } from '@tabler/icons'
 
 const StyledContainer = styled(Row)`
   align-items: center;
+  margin-left: 20px;
 `
 
 const StyledBrand = styled(Row)`
@@ -29,7 +30,7 @@ const StyledMenu = styled(Row)`
 const StyledMenuItem = styled(Row)`
   ${STYLE.clickable};
   align-items: center;
-  padding-right: 19px;
+  margin-right: 32px;
   text-transform: uppercase;
 
   @media ${STYLE.media.tablet} {
@@ -67,8 +68,8 @@ const Menu = (): ReactElement => {
 
   return isTabletWidth ? (
     <>
-      <Row style={{ alignItems: 'center' }}>
-        <FormImage src={logo} size={26} style={{ marginRight: 6 }} />
+      <Row style={{ alignItems: 'center', marginLeft: 20 }}>
+        <FormImage src={logo} size={26} style={{  }} />
         <Row
           onClick={(): void => {
             setIsOpenMobileMenu(true)
@@ -134,8 +135,9 @@ const Menu = (): ReactElement => {
   ) : (
     <StyledContainer>
       <StyledBrand onClick={(): void => push(RoutePath.home)}>
-        <FormImage src={logo} size={30} style={{ marginRight: 6 }} />
+        <FormImage src={logo} size={30} />
         <FormText
+          style={{ marginLeft: 20, marginRight: 20 }}
           fontType={{ default: 'B24', mobile: 'B20' }}
           color={COLOR.primary._400}
         >

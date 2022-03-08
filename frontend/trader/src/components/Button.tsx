@@ -4,8 +4,10 @@ import styled from 'styled-components'
 import { COLOR } from 'consts'
 
 const StyledDefaultButton = styled.button<ButtonProps>`
-  width: 100%;
-  font-size: 18px;
+  position: relative;
+  width: auto;
+  font-size: 14px;
+  padding: 10px 12px;
   text-align: center;
   border-style: none;
   box-sizing: border-box;
@@ -13,10 +15,9 @@ const StyledDefaultButton = styled.button<ButtonProps>`
   font-weight: 500;
   font-stretch: normal;
   font-style: normal;
-  line-height: 1.5;
+  line-height: 14px;
   letter-spacing: -0.3px;
-  border-radius: 21px;
-  height: 36px;
+  border-radius: 4px;
   cursor: pointer;
   :disabled {
     opacity: 0.7;
@@ -25,7 +26,7 @@ const StyledDefaultButton = styled.button<ButtonProps>`
 `
 
 const StyledPrimaryButton = styled(StyledDefaultButton)<ButtonProps>`
-  color: ${COLOR.gray._50};
+  color: ${COLOR.white};
   background: ${COLOR.primary._400};
 
   :hover {
