@@ -12,7 +12,10 @@
   },
   "testnet": {
     "cw20-staking": {
-      "codeId": "50910"
+      "codeId": "50910",
+      "contractAddresses": {
+        "default": "terra1e9y002yl53pkyynu6e755thng7l5xksvkafnqr"
+      }
     },
     "cw20-base": {
       "codeId": "50733",
