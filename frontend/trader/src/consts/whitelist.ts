@@ -61,9 +61,9 @@ import {
 } from 'types'
 
 const tokenInfo: Record<TokenKeyEnum, TokenInfoType> = {
-  [TokenKeyEnum.MIAW]: {
-    symbol: 'MIAW',
-    name: 'MIAW Token',
+  [TokenKeyEnum.WUT]: {
+    symbol: 'WUT',
+    name: 'WUT Token',
     logo: MIAWLogo,
     contractOrDenom:
       'terra1vtr50tw0pgqpes34zqu60n554p9x4950wk8f63' as ContractAddr,
@@ -450,7 +450,7 @@ const tokenInfo: Record<TokenKeyEnum, TokenInfoType> = {
 
 const mainnetTokenList: TokenType[] = [
   {
-    ...tokenInfo[TokenKeyEnum.MIAW],
+    ...tokenInfo[TokenKeyEnum.WUT],
     pairList: [
       {
         dex: DexEnum.terraswap,
@@ -1025,9 +1025,9 @@ const mainnetTokenList: TokenType[] = [
 
 const testnetTokenList: TokenType[] = [
   {
-    ...tokenInfo[TokenKeyEnum.MIAW],
+    ...tokenInfo[TokenKeyEnum.WUT],
     contractOrDenom:
-      'terra1qu5fractk8lgq23gh8efvlywal6rsd9ds8r73l' as ContractAddr,
+      'terra19w3j4kzjlph96la5d0ra62v4xqx2vvg6uhqkz5' as ContractAddr,
     pairList: [
       {
         dex: DexEnum.terraswap,
@@ -1106,7 +1106,7 @@ const testnetLpStakingList: LpStakingType[] = [
 ]
 
 const address = {
-  miawDeveloper: 'terra1mxwpyavs4v5rpwndh3uc90e3qaw2wqqndnmt3j',
+  wutDeveloper: 'terra1mxwpyavs4v5rpwndh3uc90e3qaw2wqqndnmt3j',
 }
 
 const mainnetLimitOrder =
