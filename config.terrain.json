@@ -17,16 +17,16 @@
           }
         },
         "instantiateMsg": {
-          "name": "Cool WUT",
+          "name": "Cool",
           "symbol": "WUT",
           "decimals": 3,
-          "validator": "terra1ccgfzama5y26es8xhlhcswtp76e9jcddhqhchl",
           "unbonding_period": {
-            "time": "86400"
+          "time" : 86400
           },
-          "exit_tax": "0.0001",
-          "min_withdrawal": "10"
-        }
+          "exit_tax": "1",
+          "min_withdrawal": "10",
+          "validator": "terravaloper1vf2209f5y7s4a66n5ng7wmup5gcc2kghhzy89w"
+          }
       }
     }
   },

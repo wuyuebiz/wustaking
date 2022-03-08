@@ -12,7 +12,7 @@
   },
   "testnet": {
     "cw20-staking": {
-      "codeId": "50801"
+      "codeId": "50910"
     },
     "cw20-base": {
       "codeId": "50733",
