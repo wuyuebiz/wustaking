@@ -17,20 +17,15 @@
           }
         },
         "instantiateMsg": {
-          "name": "Cool",
+          "name": "Cool WUT",
           "symbol": "WUT",
           "decimals": 3,
-          "initial_balances": [
-            {
-              "address": "terra1ccgfzama5y26es8xhlhcswtp76e9jcddhqhchl",
-              "amount": "50000"
-            }
-          ],
-          "mint": {
-            "minter": "terra1t3gt92tpgm7dzqcf2dp3n3gncvzfjgech84h8u",
-            "cap": "511223344"
+          "validator": "terra1ccgfzama5y26es8xhlhcswtp76e9jcddhqhchl",
+          "unbonding_period": {
+            "time": "86400"
           },
-          "marketing": null
+          "exit_tax": "0.0001",
+          "min_withdrawal": "10"
         }
       }
     }
