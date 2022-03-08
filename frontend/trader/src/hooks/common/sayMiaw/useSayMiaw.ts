@@ -15,15 +15,15 @@ import {
 import useBurn, { UseBurnReturn } from 'hooks/common/useBurn'
 import useCw20BurnHistory, {
   UseBurnHistoryReturn,
-} from 'hooks/query/miawToken/useBurnHistory'
+} from 'hooks/query/wutToken/useBurnHistory'
 import useCw20Info from 'hooks/query/token/useCw20Info'
 import usePool from 'hooks/query/pair/usePool'
 
 export type UseSayMiawReturn = {
   burnedAmount: uCW20
   burnedPrice: uCW20
-  onClickMiaw: () => void
-  miawBurnHistory: UseBurnHistoryReturn
+  onClickWUT: () => void
+  wutBurnHistory: UseBurnHistoryReturn
   memoOptions: {
     value: SayOptionEnum
     label: string
@@ -121,9 +121,9 @@ export const burnDataParser = ({
 }
 
 const useSayMiaw = ({
-  miawToken,
+  wutToken,
 }: {
-  miawToken: TokenType
+  wutToken: TokenType
 }): UseSayMiawReturn => {
   const memoOptions = [
     // {
@@ -132,42 +132,42 @@ const useSayMiaw = ({
     // },
     {
       value: SayOptionEnum.rank_7,
-      label: `${getAmount(SayOptionEnum.rank_7)} MIAW`,
+      label: `${getAmount(SayOptionEnum.rank_7)} WUT`,
     },
     {
       value: SayOptionEnum.rank_6,
-      label: `${getAmount(SayOptionEnum.rank_6)} MIAW`,
+      label: `${getAmount(SayOptionEnum.rank_6)} WUT`,
     },
     {
       value: SayOptionEnum.rank_5,
-      label: `${getAmount(SayOptionEnum.rank_5)} MIAW`,
+      label: `${getAmount(SayOptionEnum.rank_5)} WUT`,
     },
     {
       value: SayOptionEnum.rank_4,
-      label: `${getAmount(SayOptionEnum.rank_4)} MIAW`,
+      label: `${getAmount(SayOptionEnum.rank_4)} WUT`,
     },
     {
       value: SayOptionEnum.rank_3,
-      label: `${getAmount(SayOptionEnum.rank_3)} MIAW`,
+      label: `${getAmount(SayOptionEnum.rank_3)} WUT`,
     },
     {
       value: SayOptionEnum.rank_2,
-      label: `${getAmount(SayOptionEnum.rank_2)} MIAW`,
+      label: `${getAmount(SayOptionEnum.rank_2)} WUT`,
     },
     {
       value: SayOptionEnum.rank_1,
-      label: `${getAmount(SayOptionEnum.rank_1)} MIAW`,
+      label: `${getAmount(SayOptionEnum.rank_1)} WUT`,
     },
   ]
 
-  const burnReturn = useBurn({ token: miawToken })
+  const burnReturn = useBurn({ token: wutToken })
   const { tokenInfo } = useCw20Info({
-    token: miawToken.contractOrDenom as ContractAddr,
+    token: wutToken.contractOrDenom as ContractAddr,
   })
 
   const { poolInfo } = usePool({
-    pairContract: miawToken.pairList[0].pair,
-    token_0_ContractOrDenom: miawToken.contractOrDenom,
+    pairContract: wutToken.pairList[0].pair,
+    token_0_ContractOrDenom: wutToken.contractOrDenom,
   })
   const burnedAmount = useMemo(() => {
     const initSupply = UTIL.toBn(100_000_000).multipliedBy(1e6)
@@ -193,9 +193,9 @@ const useSayMiaw = ({
 
   const [inputMemo, setInputMemo] = useState('')
 
-  const miawBurnHistory = useCw20BurnHistory()
+  const wutBurnHistory = useCw20BurnHistory()
 
-  const onClickMiaw = (): void => {
+  const onClickWUT = (): void => {
     burnReturn.burnToken()
   }
 
@@ -217,8 +217,8 @@ const useSayMiaw = ({
   return {
     burnedAmount,
     burnedPrice,
-    onClickMiaw,
-    miawBurnHistory,
+    onClickWUT,
+    wutBurnHistory,
     memoOptions,
     burnReturn,
     inputMemo,

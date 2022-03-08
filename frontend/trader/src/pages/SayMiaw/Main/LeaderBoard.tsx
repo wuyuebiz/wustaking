@@ -7,7 +7,7 @@ import { useRecoilValue } from 'recoil'
 import { STYLE, UTIL, COLOR } from 'consts'
 
 import { View, FormText, LinkFinder, Card, Button, Row } from 'components'
-import { UseBurnLeaderBoardReturn } from 'hooks/query/miawToken/useBurnLeaderBoard'
+import { UseBurnLeaderBoardReturn } from 'hooks/query/wutToken/useBurnLeaderBoard'
 import { PostTxStatus, uToken } from 'types'
 import postTxStore from 'store/postTxStore'
 

@@ -20,10 +20,10 @@ const StyledInputBox = styled(Row)`
   }
 `
 
-const SetName = ({ miawToken }: { miawToken: TokenType }): ReactElement => {
+const SetName = ({ wutToken }: { wutToken: TokenType }): ReactElement => {
   const { hasName, burnReturn, onClickSave, inputName, setInputName } =
     useSetName({
-      miawToken,
+      wutToken,
     })
   const { amountErrMsg, memoErrMsg, invalidForm } = burnReturn
   const connectedWallet = useConnectedWallet()

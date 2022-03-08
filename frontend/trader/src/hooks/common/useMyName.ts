@@ -1,7 +1,7 @@
 import { useConnectedWallet } from '@terra-money/wallet-provider'
 import useAddressName, {
   UseAddressNameReturn,
-} from 'hooks/query/miawToken/useAddressName'
+} from 'hooks/query/wutToken/useAddressName' //
 
 const useMyName = (): UseAddressNameReturn => {
   const connectedWallet = useConnectedWallet()

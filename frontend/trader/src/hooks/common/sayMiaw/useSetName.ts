@@ -25,9 +25,9 @@ export type UseSetNameReturn = {
 }
 
 const useSetName = ({
-  miawToken,
+  wutToken,
 }: {
-  miawToken: TokenType
+  wutToken: TokenType
 }): UseSetNameReturn => {
   const postTxResult = useRecoilValue(postTxStore.postTxResult)
 
@@ -36,7 +36,7 @@ const useSetName = ({
   const sayOptionType = hasName
     ? SayOptionEnum.change_name
     : SayOptionEnum.init_name
-  const burnReturn = useBurn({ token: miawToken })
+  const burnReturn = useBurn({ token: wutToken })
 
   const [inputName, setInputName] = useState('')
 

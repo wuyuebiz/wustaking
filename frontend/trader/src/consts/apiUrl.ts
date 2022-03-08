@@ -11,7 +11,7 @@ const getCoinhallLink = ({
 
 // https://alpac4.com/TerraSwapDashboard/terra1gm5p3ner9x9xpwugn9sp6gvhd0lwrtkyrecdn3
 const TERRASWAP_DASHBOARD = 'https://alpac4.com'
-const MIAW_API = 'https://miaw-graph.com/graphql'
+const WUT_API = 'https://wut-graph.com/graphql'
 
 const getDashboardLink = ({
   pairContract,
@@ -27,5 +27,5 @@ export default {
   getCoinhallLink,
   getDashboardLink,
   TERRASWAP_API,
-  MIAW_API,
+  WUT_API,
 }

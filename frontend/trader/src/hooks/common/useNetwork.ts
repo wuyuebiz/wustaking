@@ -21,7 +21,7 @@ const useNetwork = (): {
   getSymbolByContractOrDenom: (
     contractOrDenom: ContractAddr | TokenDenomEnum
   ) => string
-  miawToken: TokenType
+  wutToken: TokenType
   mantleApi: string
 } => {
   const { network } = useWallet()
@@ -75,7 +75,7 @@ const useNetwork = (): {
     }
   }
 
-  const miawToken = whitelist.find((x) => x.symbol === 'MIAW')! as TokenType
+  const wutToken = whitelist.find((x) => x.symbol === 'WUT')! as TokenType
 
   return {
     isMainnet,
@@ -85,7 +85,7 @@ const useNetwork = (): {
     limitOrder,
     chainId: network.chainID,
     getSymbolByContractOrDenom,
-    miawToken,
+    wutToken,
     mantleApi,
   }
 }

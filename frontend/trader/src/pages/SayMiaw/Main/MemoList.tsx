@@ -18,7 +18,7 @@ import {
   burnDataParser,
   UseSayMiawReturn,
 } from 'hooks/common/sayMiaw/useSayMiaw'
-import { BurnDataType } from 'hooks/query/miawToken/useBurnHistory'
+import { BurnDataType } from 'hooks/query/wutToken/useBurnHistory'
 
 import { SayOptionEnum } from 'types'
 
@@ -82,12 +82,12 @@ const MemoList = ({
 }: {
   sayMiawReturn: UseSayMiawReturn
 }): ReactElement => {
-  const { miawBurnHistory } = sayMiawReturn
+  const { wutBurnHistory } = sayMiawReturn
   const {
     burnDataList,
     fetchNextPage: getMoreHistory,
     isLast,
-  } = miawBurnHistory
+  } = wutBurnHistory
 
   return (
     <StyledContainer>

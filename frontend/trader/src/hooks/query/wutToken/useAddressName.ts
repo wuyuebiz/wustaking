@@ -38,7 +38,7 @@ const useAddressName = ({
 
       const { data } = await axios.post<{
         data: FetchResponseType
-      }>(APIURL.MIAW_API, { query })
+      }>(APIURL.WUT_API, { query })
 
       return data.data.getName.name
     },

@@ -156,7 +156,7 @@ const Main = (): ReactElement => {
           <StyledSubTitle fontType="B24">Support Developer</StyledSubTitle>
 
           <CopyToClipboard
-            text={WHITELIST.address.miawDeveloper}
+            text={WHITELIST.address.wutDeveloper}
             onCopy={(): void => {
               toast(`Copied address!`, {
                 position: 'top-center',
@@ -169,11 +169,11 @@ const Main = (): ReactElement => {
             }}
           >
             <StyledDesc color={COLOR.primary._400}>
-              {`- ${WHITELIST.address.miawDeveloper}`}
+              {`- ${WHITELIST.address.wutDeveloper}`}
             </StyledDesc>
           </CopyToClipboard>
           <br />
-          <QrCode value={WHITELIST.address.miawDeveloper} size={200} />
+          <QrCode value={WHITELIST.address.wutDeveloper} size={200} />
         </StyledSection>
       </StyledCard>
     </StyledContainer>

@@ -19,7 +19,7 @@ import InputMemo from './InputMemo'
 import SetName from './SetName'
 import MemoList from './MemoList'
 import { IconTrophy } from '@tabler/icons'
-import useBurnLeaderBoard from 'hooks/query/miawToken/useBurnLeaderBoard'
+import useBurnLeaderBoard from 'hooks/query/wutToken/useBurnLeaderBoard'
 
 const StyledContainer = styled(View)`
   ${STYLE.setMediaWidth('lg')}
@@ -36,12 +36,12 @@ const StyledContentsLayout = styled(View)`
   }
 `
 
-const Contents = ({ miawToken }: { miawToken: TokenType }): ReactElement => {
+const Contents = ({ wutToken }: { wutToken: TokenType }): ReactElement => {
   const [showRanking, setShowRanking] = useState(false)
   const postTxResult = useRecoilValue(postTxStore.postTxResult)
-  const sayMiawReturn = useSayMiaw({ miawToken })
+  const sayWUTReturn = useSayMiaw({ wutToken })
   const { isTabletWidth } = useLayout()
-  const { miawBurnHistory, burnReturn } = sayMiawReturn
+  const { wutBurnHistory, burnReturn } = sayWUTReturn
   const burnLeaderBoard = useBurnLeaderBoard()
 
   const closeModal = (): void => {
@@ -50,7 +50,7 @@ const Contents = ({ miawToken }: { miawToken: TokenType }): ReactElement => {
   useEffect(() => {
     if (postTxResult.status === PostTxStatus.DONE) {
       setTimeout(() => {
-        miawBurnHistory.refetch()
+        wutBurnHistory.refetch()
         burnReturn.setMemo('')
         burnLeaderBoard.refetch()
       }, 500)
@@ -91,10 +91,10 @@ const Contents = ({ miawToken }: { miawToken: TokenType }): ReactElement => {
           <LeaderBoard burnLeaderBoard={burnLeaderBoard} />
         )}
         <View style={{ flex: 1 }}>
-          <TopInfo miawToken={miawToken} />
-          <SetName miawToken={miawToken} />
-          <InputMemo sayMiawReturn={sayMiawReturn} />
-          <MemoList sayMiawReturn={sayMiawReturn} />
+          <TopInfo wutToken={wutToken} />
+          <SetName wutToken={wutToken} />
+          <InputMemo sayMiawReturn={sayWUTReturn} />
+          <MemoList sayMiawReturn={sayWUTReturn} />
         </View>
       </StyledContentsLayout>
     </StyledContainer>
@@ -102,9 +102,9 @@ const Contents = ({ miawToken }: { miawToken: TokenType }): ReactElement => {
 }
 
 const Main = (): ReactElement => {
-  const { miawToken } = useNetwork()
-  return miawToken ? (
-    <Contents miawToken={miawToken} />
+  const { wutToken } = useNetwork()
+  return wutToken ? (
+    <Contents wutToken={wutToken} />
   ) : (
     <StyledContainer>
       <FormText fontType="B32">{`MIAW token is not ready ${STYLE.CAT_EMOJI}`}</FormText>

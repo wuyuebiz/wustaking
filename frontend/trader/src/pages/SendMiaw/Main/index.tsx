@@ -17,12 +17,12 @@ const StyledContainer = styled(View)`
 `
 
 const Main = (): ReactElement => {
-  const { miawToken } = useNetwork()
+  const { wutToken } = useNetwork()
 
   return (
     <StyledContainer>
-      {miawToken ? (
-        <Send token={miawToken} />
+      {wutToken ? (
+        <Send token={wutToken} />
       ) : (
         <FormText fontType="B32">MIAW token is not ready</FormText>
       )}

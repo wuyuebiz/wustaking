@@ -63,7 +63,7 @@ const useBurnHistory = (): UseBurnHistoryReturn => {
 
       const { data } = await axios.post<{
         data: FetchResponseType
-      }>(APIURL.MIAW_API, { query })
+      }>(APIURL.WUT_API, { query })
 
       const burnHistory = data.data.burnHistory || []
 

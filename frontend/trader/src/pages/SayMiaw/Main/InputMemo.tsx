@@ -40,7 +40,7 @@ const InputMemo = ({
 }): ReactElement => {
   const {
     burnReturn,
-    onClickMiaw,
+    onClickWUT,
     memoOptions,
     inputMemo,
     setInputMemo,
@@ -100,7 +100,7 @@ const InputMemo = ({
             <View style={{ flex: 1 }}>
               <AuthButton
                 style={{ borderRadius: 5, padding: '0 10px' }}
-                onClick={onClickMiaw}
+                onClick={onClickWUT}
                 disabled={invalidForm || !inputMemo}
               >
                 Miawing!

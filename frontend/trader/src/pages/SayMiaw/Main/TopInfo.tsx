@@ -23,12 +23,12 @@ const StyledTotalBurnedBox = styled(Row)`
   }
 `
 
-const TopInfo = ({ miawToken }: { miawToken: TokenType }): ReactElement => {
-  const sayMiawReturn = useSayMiaw({ miawToken })
+const TopInfo = ({ wutToken }: { wutToken: TokenType }): ReactElement => {
+  const sayMiawReturn = useSayMiaw({ wutToken })
   const { name } = useMyName()
 
   const { balance: myMiaw } = useMyBalance({
-    contractOrDenom: miawToken.contractOrDenom,
+    contractOrDenom: wutToken.contractOrDenom,
   })
 
   return (

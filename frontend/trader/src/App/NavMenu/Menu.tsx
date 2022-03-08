@@ -53,11 +53,11 @@ const Menu = (): ReactElement => {
     },
     {
       to: RoutePath.say_miaw,
-      title: 'Say Miaw',
+      title: 'Say WUT',
     },
     {
       to: RoutePath.miaw_paper,
-      title: 'Miaw Paper',
+      title: 'WUT Paper',
     },
   ]
 
@@ -100,7 +100,7 @@ const Menu = (): ReactElement => {
             }}
           >
             <FormImage src={logo} size={30} style={{ marginRight: 6 }} />
-            <FormText fontType="B14">Miaw Trader</FormText>
+            <FormText fontType="B14">WUT Trader</FormText>
           </Row>
           <View style={{ padding: '0 22px' }}>
             {_.map(menuList, (menu, index) => {
@@ -139,7 +139,7 @@ const Menu = (): ReactElement => {
           fontType={{ default: 'B24', mobile: 'B20' }}
           color={COLOR.primary._400}
         >
-          Miaw Trader
+          WUT Trader
         </FormText>
       </StyledBrand>
 
