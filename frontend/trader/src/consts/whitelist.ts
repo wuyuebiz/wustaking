@@ -1,7 +1,7 @@
 import { TokenType, LpofLpType, LpStakingType, DexEnum } from 'types/network'
 
 import USTLogo from 'images/whitelist/UST.png'
-import MIAWLogo from 'images/whitelist/MIAW.png'
+import MIAWLogo from 'images/minion.png'
 import LUNALogo from 'images/whitelist/LUNA.svg'
 import bLUNALogo from 'images/whitelist/bLUNA.png'
 import LOTALogo from 'images/whitelist/LOTA.png'
@@ -1032,8 +1032,8 @@ const testnetTokenList: TokenType[] = [
       {
         dex: DexEnum.terraswap,
         base: TokenKeyEnum.UST,
-        pair: 'terra1834ku9y7s2swyp2r090pc29c4s06hy9n9drwvy' as ContractAddr,
-        lp: 'terra1e9y002yl53pkyynu6e755thng7l5xksvkafnqr' as ContractAddr,
+        pair: 'terra1g5c908cqx6sfwkcuxxm5w4dltzh3sawdtq3wla' as ContractAddr,
+        lp: 'terra1qprgn6qne4rg8muyq6893tz9apc9rtfy34q93x' as ContractAddr,
       },
     ],
   },
@@ -1086,9 +1086,9 @@ const testnetLpStakingList: LpStakingType[] = [
       'terra19w3j4kzjlph96la5d0ra62v4xqx2vvg6uhqkz5' as ContractAddr,
     nativeDenomLogo: USTLogo,
     nativeDenom: TokenDenomEnum.uusd,
-    lpContract: 'terra1e9y002yl53pkyynu6e755thng7l5xksvkafnqr' as ContractAddr,
-    lpPair: 'terra1834ku9y7s2swyp2r090pc29c4s06hy9n9drwvy' as ContractAddr,
-    lpStaking: 'terra17cvsfp5kn2kucvl44vp4r3cwy4aekvrdnmsy5x' as ContractAddr,
+    lpContract: 'terra19w3j4kzjlph96la5d0ra62v4xqx2vvg6uhqkz5' as ContractAddr,
+    lpPair: 'terra1g5c908cqx6sfwkcuxxm5w4dltzh3sawdtq3wla' as ContractAddr,
+    lpStaking: 'terra1qprgn6qne4rg8muyq6893tz9apc9rtfy34q93x' as ContractAddr, //ok
   },
 ]
 

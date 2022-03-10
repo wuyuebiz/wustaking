@@ -22,6 +22,9 @@
       "contractAddresses": {
         "default": "terra19w3j4kzjlph96la5d0ra62v4xqx2vvg6uhqkz5"
       }
+    },
+    "wut-lp-staking": {
+      "codeId": "51773"
     }
   }
 }

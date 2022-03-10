@@ -25,8 +25,8 @@
 2. cw20-staking
 ```
 "instantiateMsg": {
-  "name": "Cool",
-  "symbol": "WUT",
+  "name": "mCool",
+  "symbol": "mWUT",
   "decimals": 3,
   "unbonding_period": {
     "time" : 86400
@@ -36,6 +36,18 @@
   "validator": "terravaloper1vf2209f5y7s4a66n5ng7wmup5gcc2kghhzy89w"
 }
 ```
+
+3. lp-staking
+```
+"instantiateMsg": {
+  "distribution_schedule": [
+    [100, 200, "1000000"]
+  ],
+  "wut_lp_token": "terra1g5c908cqx6sfwkcuxxm5w4dltzh3sawdtq3wla",
+  "wut_token": "terra19w3j4kzjlph96la5d0ra62v4xqx2vvg6uhqkz5"
+}
+```
+
 
 ### mint
 ```
@@ -123,12 +135,26 @@ terrain deploy cw20-staking --signer bombay --network testnet
 ```
 - response
 ```
-"cw20-staking": {
-      "codeId": "50910",
-      "contractAddresses": {
-        "default": "terra1e9y002yl53pkyynu6e755thng7l5xksvkafnqr"
-      }
-    }
+creator	
+terra1ccgfzama5y26es8xhlhcswtp76e9jcddhqhchl
+admin	
+code_id	51753
+contract_address	
+terra1g5c908cqx6sfwkcuxxm5w4dltzh3sawdtq3wla
+```
+
+- wut-lp-staking
+```
+terrain deploy wut-lp-staking --signer bombay --network testnet
+```
+
+- response
+
+```
+
+code_id	51774
+contract_address	
+terra1qprgn6qne4rg8muyq6893tz9apc9rtfy34q93x
 ```
 
 #### localterra
