@@ -4,11 +4,10 @@ import styled from 'styled-components'
 import { COLOR, STYLE, UTIL } from 'consts'
 
 import { View, FormText, Row } from 'components'
-import useSayMiaw from 'hooks/common/sayMiaw/useSayMiaw'
+import useSayMinion from 'hooks/common/sayMinion/useSayMinion'
 
 import { TokenType } from 'types'
 import useMyBalance from 'hooks/common/useMyBalance'
-import useMyName from 'hooks/common/useMyName'
 
 const StyledContainer = styled(View)`
   background-color: ${COLOR.primary._600};
@@ -23,12 +22,11 @@ const StyledTotalBurnedBox = styled(Row)`
   }
 `
 
-const TopInfo = ({ wutToken }: { wutToken: TokenType }): ReactElement => {
-  const sayMiawReturn = useSayMiaw({ wutToken })
-  const { name } = useMyName()
+const TopInfo = ({ MINIONToken }: { MINIONToken: TokenType }): ReactElement => {
+  const sayMINIONReturn = useSayMinion({ MINIONToken })
 
-  const { balance: myWUT } = useMyBalance({
-    contractOrDenom: wutToken.contractOrDenom,
+  const { balance: myMINION } = useMyBalance({
+    contractOrDenom: MINIONToken.contractOrDenom,
   })
 
   return (
@@ -39,11 +37,11 @@ const TopInfo = ({ wutToken }: { wutToken: TokenType }): ReactElement => {
           style={{ paddingRight: 5 }}
           color={COLOR.rainbow.red}
         >
-          🔥Total Burned :
+          🔥 Total Burned :
         </FormText>
         <FormText fontType="B18" color={COLOR.gray._100}>{`${UTIL.formatAmount(
-          sayMiawReturn.burnedAmount
-        )} WUT ( ≒  ${UTIL.formatAmount(sayMiawReturn.burnedPrice, {
+          sayMINIONReturn.burnedAmount
+        )} MINION ( ≒  ${UTIL.formatAmount(sayMINIONReturn.burnedPrice, {
           toFix: 0,
         })} UST )`}</FormText>
       </StyledTotalBurnedBox>
@@ -51,14 +49,7 @@ const TopInfo = ({ wutToken }: { wutToken: TokenType }): ReactElement => {
         <FormText
           fontType="R16"
           color={COLOR.gray._100}
-        >{`My WUT : ${UTIL.formatAmount(myWUT)}`}</FormText>
-        <FormText
-          fontType="R16"
-          color={COLOR.gray._100}
-        >{`My Name : ${name}`}</FormText>
-        <FormText fontType="R14" color={COLOR.warning}>
-          * Updating name may need a few minutes
-        </FormText>
+        >{`My MINION : ${UTIL.formatAmount(myMINION)}`}</FormText>
       </View>
     </StyledContainer>
   )

@@ -61,9 +61,9 @@ import {
 } from 'types'
 
 const tokenInfo: Record<TokenKeyEnum, TokenInfoType> = {
-  [TokenKeyEnum.WUT]: {
-    symbol: 'WUT',
-    name: 'WUT Token',
+  [TokenKeyEnum.MINION]: {
+    symbol: 'MINION',
+    name: 'MINION Token',
     logo: MIAWLogo,
     contractOrDenom:
       'terra1vtr50tw0pgqpes34zqu60n554p9x4950wk8f63' as ContractAddr,
@@ -450,7 +450,7 @@ const tokenInfo: Record<TokenKeyEnum, TokenInfoType> = {
 
 const mainnetTokenList: TokenType[] = [
   {
-    ...tokenInfo[TokenKeyEnum.WUT],
+    ...tokenInfo[TokenKeyEnum.MINION],
     pairList: [
       {
         dex: DexEnum.terraswap,
@@ -1025,15 +1025,28 @@ const mainnetTokenList: TokenType[] = [
 
 const testnetTokenList: TokenType[] = [
   {
-    ...tokenInfo[TokenKeyEnum.WUT],
+    ...tokenInfo[TokenKeyEnum.MINION],
     contractOrDenom:
-      'terra19w3j4kzjlph96la5d0ra62v4xqx2vvg6uhqkz5' as ContractAddr,
+      'terra1pvl9dymgf5nahrc85yqqucytlhjk0xv3wnztca' as ContractAddr, //ok
     pairList: [
       {
         dex: DexEnum.terraswap,
         base: TokenKeyEnum.UST,
-        pair: 'terra1g5c908cqx6sfwkcuxxm5w4dltzh3sawdtq3wla' as ContractAddr,
-        lp: 'terra1qprgn6qne4rg8muyq6893tz9apc9rtfy34q93x' as ContractAddr,
+        pair: 'terra1gw5pacpvhswlv5twgmgfjrj9ys5gvrjuxgdsk7' as ContractAddr, // wrong
+        lp: 'terra18e4mudt7kdml6lma5fhsydszxpexmxf2ez9hpn' as ContractAddr, // ok
+      },
+    ],
+  },
+  {
+    ...tokenInfo[TokenKeyEnum.MIR],
+    contractOrDenom:
+      'terra10llyp6v3j3her8u3ce66ragytu45kcmd9asj3u' as ContractAddr,
+    pairList: [
+      {
+        dex: DexEnum.terraswap,
+        base: TokenKeyEnum.UST,
+        pair: 'terra1cz6qp8lfwht83fh9xm9n94kj04qc35ulga5dl0' as ContractAddr,
+        lp: 'terra1zrryfhlrpg49quz37u90ck6f396l4xdjs5s08j' as ContractAddr,
       },
     ],
   },
@@ -1083,17 +1096,17 @@ const testnetLpStakingList: LpStakingType[] = [
   {
     tokenLogo: MIAWLogo,
     tokenContract:
-      'terra19w3j4kzjlph96la5d0ra62v4xqx2vvg6uhqkz5' as ContractAddr,
+      'terra1pvl9dymgf5nahrc85yqqucytlhjk0xv3wnztca' as ContractAddr, // ok
     nativeDenomLogo: USTLogo,
     nativeDenom: TokenDenomEnum.uusd,
-    lpContract: 'terra19w3j4kzjlph96la5d0ra62v4xqx2vvg6uhqkz5' as ContractAddr,
-    lpPair: 'terra1g5c908cqx6sfwkcuxxm5w4dltzh3sawdtq3wla' as ContractAddr,
-    lpStaking: 'terra1qprgn6qne4rg8muyq6893tz9apc9rtfy34q93x' as ContractAddr, //ok
+    lpContract: 'terra18e4mudt7kdml6lma5fhsydszxpexmxf2ez9hpn' as ContractAddr, // ok
+    lpPair: 'terra1gw5pacpvhswlv5twgmgfjrj9ys5gvrjuxgdsk7' as ContractAddr, // wrong
+    lpStaking: 'terra1j50hhzmg6rm5rm7vqljgc3e40d33mkj334x6t7' as ContractAddr, //ok
   },
 ]
 
 const address = {
-  wutDeveloper: 'terra1t3gt92tpgm7dzqcf2dp3n3gncvzfjgech84h8u',
+  MINIONDeveloper: 'terra1t3gt92tpgm7dzqcf2dp3n3gncvzfjgech84h8u',
 }
 
 const mainnetLimitOrder =

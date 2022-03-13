@@ -8,9 +8,9 @@ import { UTIL, COLOR, STYLE } from 'consts'
 import { View, Row, FormInput, AuthButton, FormText } from 'components'
 import {
   getMemoStyle,
-  UseSayMiawReturn,
+  UseSayMinionReturn,
   getAmount,
-} from 'hooks/common/sayMiaw/useSayMiaw'
+} from 'hooks/common/sayMinion/useSayMinion'
 import { Token } from 'types'
 
 const StyledContainer = styled(View)``
@@ -36,11 +36,11 @@ const StyledInputBox = styled(Row)`
 const InputMemo = ({
   sayMiawReturn,
 }: {
-  sayMiawReturn: UseSayMiawReturn
+  sayMiawReturn: UseSayMinionReturn
 }): ReactElement => {
   const {
     burnReturn,
-    onClickWUT,
+    onClickMinion,
     memoOptions,
     inputMemo,
     setInputMemo,
@@ -92,17 +92,17 @@ const InputMemo = ({
               <FormInput
                 inputProps={{
                   value: inputMemo,
-                  placeholder: '1.Input text. 2.Click Miaw!🐱',
+                  placeholder: '1.Input text. 2.Click Minion!🐱',
                 }}
                 onChangeValue={setInputMemo}
               />
             </View>
             <View style={{ flex: 1 }}>
               <AuthButton
-                onClick={onClickWUT}
+                onClick={onClickMinion}
                 disabled={invalidForm || !inputMemo}
               >
-                Miawing!
+                Minion!
               </AuthButton>
             </View>
           </StyledInputBox>

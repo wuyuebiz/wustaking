@@ -59,7 +59,7 @@ const LpUnStakeForm = ({
     <>
       <StyledSection>
         <FormInput
-          suffix={isMobileWidth ? 'LP' : 'WUT-UST LP'}
+          suffix={isMobileWidth ? 'LP' : 'MINION-UST LP'}
           onChangeValue={(value): void => {
             setLpTokenAmount(value as LP)
           }}

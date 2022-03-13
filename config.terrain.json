@@ -18,9 +18,7 @@
         },
         "instantiateMsg": {
           "distribution_schedule": [
-            100,
-            200,
-            "1000000"
+            [100, 200, "1000000"]
           ],
           "wut_lp_token": "terra1g5c908cqx6sfwkcuxxm5w4dltzh3sawdtq3wla",
           "wut_token": "terra19w3j4kzjlph96la5d0ra62v4xqx2vvg6uhqkz5"

@@ -42,10 +42,10 @@ export type UseLimitOrderSellReturn = {
   updateAskPrice: (value: Token) => void
   askPriceErrMsg: string
 
-  wutToken: TokenType
-  wutAmount: Token
-  setWUTAmount: (value: Token) => void
-  wutAmountErrMsg: string
+  MINIONToken: TokenType
+  MINIONAmount: Token
+  setMINIONAmount: (value: Token) => void
+  MINIONAmountErrMsg: string
 
   fee?: Fee
 
@@ -67,7 +67,7 @@ const useLimitOrderSell = ({
   askTokenSymbol: string
   pairContract: ContractAddr
 }): UseLimitOrderSellReturn => {
-  const { limitOrder, wutToken } = useNetwork()
+  const { limitOrder, MINIONToken } = useNetwork()
   const { balance: uusdBal } = useMyBalance({
     contractOrDenom: TokenDenomEnum.uusd,
   })
@@ -77,7 +77,7 @@ const useLimitOrderSell = ({
   })
 
   const { balance: miawBal } = useMyBalance({
-    contractOrDenom: wutToken.contractOrDenom,
+    contractOrDenom: MINIONToken.contractOrDenom,
   })
 
   const { getSubmitOrderMsgs } = useFabricator()
@@ -116,19 +116,19 @@ const useLimitOrderSell = ({
   }, [offerAmount, askPrice])
 
   const myMiawAmount = UTIL.demicrofy(miawBal)
-  const [wutAmount, setWUTAmount] = useState<Token>('1' as Token)
-  const wutAmountErrMsg = useMemo(() => {
+  const [MINIONAmount, setMINIONAmount] = useState<Token>('1' as Token)
+  const MINIONAmountErrMsg = useMemo(() => {
     return validateFormInputAmount({
-      input: wutAmount,
+      input: MINIONAmount,
       max: myMiawAmount,
       min: '1' as Token,
     })
-  }, [wutAmount, myMiawAmount])
+  }, [MINIONAmount, myMiawAmount])
 
   const invalidForm =
     postTxResult.status === PostTxStatus.BROADCAST ||
     offerAmount.trim() === '' ||
-    !!wutAmountErrMsg ||
+    !!MINIONAmountErrMsg ||
     !!offerAmountErrMsg ||
     !!askPriceErrMsg
 
@@ -141,15 +141,15 @@ const useLimitOrderSell = ({
         limitOrderContract: limitOrder,
         offerContractOrDenom,
         askContractOrDenom: askDenom,
-        feeContractOrDenom: wutToken.contractOrDenom,
-        feeAmount: wutAmount,
+        feeContractOrDenom: MINIONToken.contractOrDenom,
+        feeAmount: MINIONAmount,
       })
     }
     return {
       msgs,
       feeDenoms: ['uusd'],
     }
-  }, [walletAddress, offerAmount, askAmount, wutAmount])
+  }, [walletAddress, offerAmount, askAmount, MINIONAmount])
 
   const { fee } = useCalcFee({
     isValid: !invalidForm,
@@ -218,10 +218,10 @@ const useLimitOrderSell = ({
     updateAskPrice,
     askPriceErrMsg,
 
-    wutToken,
-    wutAmount,
-    setWUTAmount,
-    wutAmountErrMsg,
+    MINIONToken,
+    MINIONAmount,
+    setMINIONAmount,
+    MINIONAmountErrMsg,
 
     fee,
     onClickLimitOrderSell,

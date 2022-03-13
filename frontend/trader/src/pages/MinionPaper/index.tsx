@@ -6,7 +6,7 @@ import { RoutePath } from 'types'
 import Main from './Main'
 
 const MiawPaper = (): ReactElement => {
-  return <Route exact path={RoutePath.miaw_paper} component={Main} />
+  return <Route exact path={RoutePath.minion_paper} component={Main} />
 }
 
 export default MiawPaper

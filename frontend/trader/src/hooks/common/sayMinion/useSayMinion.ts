@@ -13,17 +13,13 @@ import {
 } from 'types'
 
 import useBurn, { UseBurnReturn } from 'hooks/common/useBurn'
-import useCw20BurnHistory, {
-  UseBurnHistoryReturn,
-} from 'hooks/query/wutToken/useBurnHistory'
 import useCw20Info from 'hooks/query/token/useCw20Info'
 import usePool from 'hooks/query/pair/usePool'
 
-export type UseSayMiawReturn = {
+export type UseSayMinionReturn = {
   burnedAmount: uCW20
   burnedPrice: uCW20
-  onClickWUT: () => void
-  wutBurnHistory: UseBurnHistoryReturn
+  onClickMinion: () => void
   memoOptions: {
     value: SayOptionEnum
     label: string
@@ -120,58 +116,59 @@ export const burnDataParser = ({
   }
 }
 
-const useSayMiaw = ({
-  wutToken,
+const useSayMinion = ({
+  MINIONToken,
 }: {
-  wutToken: TokenType
-}): UseSayMiawReturn => {
+  MINIONToken: TokenType
+}): UseSayMinionReturn => {
   const memoOptions = [
     // {
     //   value: SayOptionEnum.PLACEBO_RAFFLE_1,
-    //   label: `${getAmount(SayOptionEnum.PLACEBO_RAFFLE_1)} WUT PLACEBO RAFFLE`,
+    //   label: `${getAmount(SayOptionEnum.PLACEBO_RAFFLE_1)} MINION PLACEBO RAFFLE`,
     // },
     {
       value: SayOptionEnum.rank_7,
-      label: `${getAmount(SayOptionEnum.rank_7)} WUT`,
+      label: `${getAmount(SayOptionEnum.rank_7)} MINION`,
     },
     {
       value: SayOptionEnum.rank_6,
-      label: `${getAmount(SayOptionEnum.rank_6)} WUT`,
+      label: `${getAmount(SayOptionEnum.rank_6)} MINION`,
     },
     {
       value: SayOptionEnum.rank_5,
-      label: `${getAmount(SayOptionEnum.rank_5)} WUT`,
+      label: `${getAmount(SayOptionEnum.rank_5)} MINION`,
     },
     {
       value: SayOptionEnum.rank_4,
-      label: `${getAmount(SayOptionEnum.rank_4)} WUT`,
+      label: `${getAmount(SayOptionEnum.rank_4)} MINION`,
     },
     {
       value: SayOptionEnum.rank_3,
-      label: `${getAmount(SayOptionEnum.rank_3)} WUT`,
+      label: `${getAmount(SayOptionEnum.rank_3)} MINION`,
     },
     {
       value: SayOptionEnum.rank_2,
-      label: `${getAmount(SayOptionEnum.rank_2)} WUT`,
+      label: `${getAmount(SayOptionEnum.rank_2)} MINION`,
     },
     {
       value: SayOptionEnum.rank_1,
-      label: `${getAmount(SayOptionEnum.rank_1)} WUT`,
+      label: `${getAmount(SayOptionEnum.rank_1)} MINION`,
     },
   ]
 
-  const burnReturn = useBurn({ token: wutToken })
+  const burnReturn = useBurn({ token: MINIONToken })
   const { tokenInfo } = useCw20Info({
-    token: wutToken.contractOrDenom as ContractAddr,
+    token: MINIONToken.contractOrDenom as ContractAddr,
   })
 
   const { poolInfo } = usePool({
-    pairContract: wutToken.pairList[0].pair,
-    token_0_ContractOrDenom: wutToken.contractOrDenom,
+    pairContract: MINIONToken.pairList[0].pair,
+    token_0_ContractOrDenom: MINIONToken.contractOrDenom,
   })
   const burnedAmount = useMemo(() => {
-    const initSupply = UTIL.toBn(100_000_000).multipliedBy(1e6)
-    return initSupply
+    console.log(tokenInfo, '======')
+    const cap = UTIL.toBn(511223344).multipliedBy(1e3)
+    return cap
       .minus(tokenInfo?.total_supply || '0')
       .toString(10) as uCW20
   }, [tokenInfo?.total_supply])
@@ -193,9 +190,7 @@ const useSayMiaw = ({
 
   const [inputMemo, setInputMemo] = useState('')
 
-  const wutBurnHistory = useCw20BurnHistory()
-
-  const onClickWUT = (): void => {
+  const onClickMinion = (): void => {
     burnReturn.burnToken()
   }
 
@@ -217,8 +212,7 @@ const useSayMiaw = ({
   return {
     burnedAmount,
     burnedPrice,
-    onClickWUT,
-    wutBurnHistory,
+    onClickMinion,
     memoOptions,
     burnReturn,
     inputMemo,
@@ -227,4 +221,4 @@ const useSayMiaw = ({
   }
 }
 
-export default useSayMiaw
+export default useSayMinion

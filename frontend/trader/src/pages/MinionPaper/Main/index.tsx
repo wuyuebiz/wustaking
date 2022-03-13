@@ -42,10 +42,10 @@ const StyledDesc = styled(FormText)`
 const Main = (): ReactElement => {
   return (
     <StyledContainer>
-      <StyledMainTitle fontType="B32">Miaw paper</StyledMainTitle>
+      <StyledMainTitle fontType="B32">MINION paper</StyledMainTitle>
       <StyledCard>
         <StyledSection>
-          <StyledSubTitle fontType="B24">What the WUT</StyledSubTitle>
+          <StyledSubTitle fontType="B24">What the MINION</StyledSubTitle>
           <StyledDesc>
             <LinkA link="https://github.com/wuyuebiz/wustaking">
               <FormText fontType={'R18'} color={COLOR.primary._400}>
@@ -56,12 +56,12 @@ const Main = (): ReactElement => {
           <StyledDesc>
             - Token,Lp,Pair contracts are based on The Terraswap factory
           </StyledDesc>
-          <StyledDesc>- WUT was made by a dev who loves the Terra</StyledDesc>
+          <StyledDesc>- MINION was made by a dev who loves the Terra</StyledDesc>
         </StyledSection>
 
         <StyledSection>
           <StyledSubTitle fontType="B24">
-            Token Distribution plan for WUT V1
+            Token Distribution plan for MINION V1
           </StyledSubTitle>
           <StyledDesc fontType="B20">100M Total supply</StyledDesc>
           <StyledDesc>
@@ -74,9 +74,9 @@ const Main = (): ReactElement => {
         </StyledSection>
 
         <StyledSection>
-          <StyledSubTitle fontType="B24">Roadmap for WUT V1</StyledSubTitle>
+          <StyledSubTitle fontType="B24">Roadmap for MINION V1</StyledSubTitle>
           <StyledDesc>
-            <IconSquareCheck color={COLOR.primary._600} /> SayWUT
+            <IconSquareCheck color={COLOR.primary._600} /> SayMINION
           </StyledDesc>
           <StyledDesc>
             <IconSquareCheck color={COLOR.primary._600} /> LpTower
@@ -101,19 +101,19 @@ const Main = (): ReactElement => {
 
         <StyledSection>
           <StyledSubTitle fontType="B24">Keeping token prices</StyledSubTitle>
-          <StyledDesc fontType="B18">1. SayWUT</StyledDesc>
+          <StyledDesc fontType="B18">1. SayMINION</StyledDesc>
           <StyledDesc>
-            {'-> Burn WUT through SayWUT with various events'}
+            {'-> Burn MINION through SayMINION with various events'}
           </StyledDesc>
           <StyledDesc fontType="B18">2. Miawaifu NFT</StyledDesc>
           <StyledDesc>{'-> Supply lp with Miawaifu sales proceeds'}</StyledDesc>
           <StyledDesc fontType="B18">3. NFT Trader</StyledDesc>
-          <StyledDesc>{'-> Burn WUT to upload nft'}</StyledDesc>
+          <StyledDesc>{'-> Burn MINION to upload nft'}</StyledDesc>
           <StyledDesc>{'-> Supply lp with nft trading fee'}</StyledDesc>
         </StyledSection>
 
         <StyledSection>
-          <StyledSubTitle fontType="B24">WUT V2?</StyledSubTitle>
+          <StyledSubTitle fontType="B24">MINION V2?</StyledSubTitle>
           <StyledDesc>
             - Supporting token swap independently without the Terraswap
           </StyledDesc>
@@ -142,7 +142,7 @@ const Main = (): ReactElement => {
           <StyledSubTitle fontType="B24">Support Developer</StyledSubTitle>
 
           <CopyToClipboard
-            text={WHITELIST.address.wutDeveloper}
+            text={WHITELIST.address.MINIONDeveloper}
             onCopy={(): void => {
               toast(`Copied address!`, {
                 position: 'top-center',
@@ -155,11 +155,11 @@ const Main = (): ReactElement => {
             }}
           >
             <StyledDesc color={COLOR.primary._400}>
-              {`- ${WHITELIST.address.wutDeveloper}`}
+              {`- ${WHITELIST.address.MINIONDeveloper}`}
             </StyledDesc>
           </CopyToClipboard>
           <br />
-          <QrCode value={WHITELIST.address.wutDeveloper} size={200} />
+          <QrCode value={WHITELIST.address.MINIONDeveloper} size={200} />
         </StyledSection>
       </StyledCard>
     </StyledContainer>

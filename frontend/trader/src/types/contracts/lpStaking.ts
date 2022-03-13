@@ -7,8 +7,8 @@ export namespace lpStaking {
   }
 
   export interface ConfigResponse {
-    wut_token: ContractAddr
-    wut_lp_token: ContractAddr
+    MINION_token: ContractAddr
+    MINION_lp_token: ContractAddr
     distribution_schedule: Array<[number, number, uCW20]>
   }
 

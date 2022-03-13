@@ -3,9 +3,9 @@ export enum RoutePath {
 
   lpTower = '/lpTower',
 
-  miaw_paper = '/miaw_paper',
+  minion_paper = '/minion_paper',
 
-  say_miaw = '/say_miaw',
+  say_minion = '/say_minion',
 
   send = '/send',
 }
@@ -37,7 +37,7 @@ export type RouteParams = {
     lpOfLpIndex: string
     lpStakingIndex: string
   }
-  [RoutePath.miaw_paper]: undefined
-  [RoutePath.say_miaw]: undefined
+  [RoutePath.minion_paper]: undefined
+  [RoutePath.say_minion]: undefined
   [RoutePath.send]: undefined
 }

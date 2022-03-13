@@ -17,14 +17,14 @@ const StyledContainer = styled(View)`
 `
 
 const Main = (): ReactElement => {
-  const { wutToken } = useNetwork()
+  const { MINIONToken } = useNetwork()
 
   return (
     <StyledContainer>
-      {wutToken ? (
-        <Send token={wutToken} />
+      {MINIONToken ? (
+        <Send token={MINIONToken} />
       ) : (
-        <FormText fontType="B32">WUT token is not ready</FormText>
+        <FormText fontType="B32">MINION token is not ready</FormText>
       )}
     </StyledContainer>
   )

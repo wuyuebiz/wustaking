@@ -53,12 +53,16 @@ const Menu = (): ReactElement => {
       title: 'Lp Tower',
     },
     {
-      to: RoutePath.say_miaw,
-      title: 'Say WUT',
+      to: RoutePath.say_minion,
+      title: 'Say MINION',
     },
     {
-      to: RoutePath.miaw_paper,
-      title: 'WUT Paper',
+      to: RoutePath.send,
+      title: 'Send',
+    },
+    {
+      to: RoutePath.minion_paper,
+      title: 'MINION Paper',
     },
   ]
 
@@ -101,7 +105,7 @@ const Menu = (): ReactElement => {
             }}
           >
             <FormImage src={logo} size={30} style={{ marginRight: 6 }} />
-            <FormText fontType="B14">WUT Trader</FormText>
+            <FormText fontType="B14">MINION Trader</FormText>
           </Row>
           <View style={{ padding: '0 22px' }}>
             {_.map(menuList, (menu, index) => {
@@ -141,7 +145,7 @@ const Menu = (): ReactElement => {
           fontType={{ default: 'B24', mobile: 'B20' }}
           color={COLOR.primary._400}
         >
-          WUT Trader
+          MINION Trader
         </FormText>
       </StyledBrand>
 
