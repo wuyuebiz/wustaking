@@ -53,7 +53,6 @@ const StyledLimitOrderButton = styled(FormText)`
   flex-direction: row;
   align-items: center;
   border-radius: 5px;
-  border: 1px solid ${COLOR.gray._600};
   width: fit-content;
   padding: 5px 10px;
   margin-bottom: 10px;

@@ -86,7 +86,7 @@ const SwapBase = ({
   >
 }): ReactElement => {
   return (
-    <View style={{ borderTop: `1px solid gray`, paddingTop: 6, marginTop: 6 }}>
+    <View style={{ borderTop: `1px solid #e0e0e0`, paddingTop: 6, marginTop: 6 }}>
       <FormText fontType="B14">Select Dex / Denom</FormText>
       <Row>
         {_.map(pairList, (x, i) => {

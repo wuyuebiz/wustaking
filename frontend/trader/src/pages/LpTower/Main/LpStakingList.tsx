@@ -138,7 +138,7 @@ const LpStakingItem = ({
             </FormText>
           </Row>
           <Button
-            style={{ width: 100, height: 26 }}
+            style={{ width: 100 }}
             onClick={(e): void => {
               push(RoutePath.home, {
                 symbol: tokenSymbol,
