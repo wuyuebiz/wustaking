@@ -24,7 +24,7 @@ const Main = (): ReactElement => {
       {MINIONToken ? (
         <Send token={MINIONToken} />
       ) : (
-        <FormText fontType="B32">MINION token is not ready</FormText>
+        <FormText fontType="B32">Minion token is not ready</FormText>
       )}
     </StyledContainer>
   )

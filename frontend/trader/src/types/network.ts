@@ -2,7 +2,7 @@ import { TokenDenomEnum } from 'types'
 import { ContractAddr } from './contracts'
 
 export enum TokenKeyEnum {
-  MINION = 'MINION',
+  MINION = 'Minion',
   UST = 'UST',
   Luna = 'Luna',
   bLuna = 'bLuna',

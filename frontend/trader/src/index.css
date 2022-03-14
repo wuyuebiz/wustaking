@@ -1,17 +1,35 @@
 @font-face {
-  font-family: 'OverpassMono';
-  src: url(./fonts/OverpassMono-Regular.ttf);
+  font-family: 'Roboto';
+  src: url(./fonts/Roboto-Regular.ttf);
   font-weight: 400, normal;
 }
 
 @font-face {
-  font-family: 'OverpassMono';
-  src: url(./fonts/OverpassMono-Bold.ttf);
+  font-family: 'Roboto';
+  src: url(./fonts/Roboto-Bold.ttf);
   font-weight: 700;
 }
 
+@font-face {
+  font-family: 'Roboto';
+  src: url(./fonts/Roboto-Medium.ttf);
+  font-weight: 600;
+}
+
+@font-face {
+  font-family: 'Roboto';
+  src: url(./fonts/Roboto-Light.ttf);
+  font-weight: 200;
+}
+
+@font-face {
+  font-family: 'Roboto';
+  src: url(./fonts/Roboto-Thin.ttf);
+  font-weight: 100;
+}
+
 * {
-  font-family: OverpassMono, sans-serif !important;
+  font-family: Roboto,sans-serif !important;
 }
 
 html,

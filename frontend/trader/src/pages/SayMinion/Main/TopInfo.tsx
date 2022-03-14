@@ -41,7 +41,7 @@ const TopInfo = ({ MINIONToken }: { MINIONToken: TokenType }): ReactElement => {
         </FormText>
         <FormText fontType="B18" color={COLOR.gray._100}>{`${UTIL.formatAmount(
           sayMINIONReturn.burnedAmount
-        )} MINION ( ≒  ${UTIL.formatAmount(sayMINIONReturn.burnedPrice, {
+        )} Minion ( ≒  ${UTIL.formatAmount(sayMINIONReturn.burnedPrice, {
           toFix: 0,
         })} UST )`}</FormText>
       </StyledTotalBurnedBox>
@@ -49,7 +49,7 @@ const TopInfo = ({ MINIONToken }: { MINIONToken: TokenType }): ReactElement => {
         <FormText
           fontType="R16"
           color={COLOR.gray._100}
-        >{`My MINION : ${UTIL.formatAmount(myMINION)}`}</FormText>
+        >{`My Minion : ${UTIL.formatAmount(myMINION)}`}</FormText>
       </View>
     </StyledContainer>
   )

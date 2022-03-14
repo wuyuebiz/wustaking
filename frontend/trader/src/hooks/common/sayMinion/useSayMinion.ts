@@ -128,31 +128,31 @@ const useSayMinion = ({
     // },
     {
       value: SayOptionEnum.rank_7,
-      label: `${getAmount(SayOptionEnum.rank_7)} MINION`,
+      label: `${getAmount(SayOptionEnum.rank_7)} Minion`,
     },
     {
       value: SayOptionEnum.rank_6,
-      label: `${getAmount(SayOptionEnum.rank_6)} MINION`,
+      label: `${getAmount(SayOptionEnum.rank_6)} Minion`,
     },
     {
       value: SayOptionEnum.rank_5,
-      label: `${getAmount(SayOptionEnum.rank_5)} MINION`,
+      label: `${getAmount(SayOptionEnum.rank_5)} Minion`,
     },
     {
       value: SayOptionEnum.rank_4,
-      label: `${getAmount(SayOptionEnum.rank_4)} MINION`,
+      label: `${getAmount(SayOptionEnum.rank_4)} Minion`,
     },
     {
       value: SayOptionEnum.rank_3,
-      label: `${getAmount(SayOptionEnum.rank_3)} MINION`,
+      label: `${getAmount(SayOptionEnum.rank_3)} Minion`,
     },
     {
       value: SayOptionEnum.rank_2,
-      label: `${getAmount(SayOptionEnum.rank_2)} MINION`,
+      label: `${getAmount(SayOptionEnum.rank_2)} Minion`,
     },
     {
       value: SayOptionEnum.rank_1,
-      label: `${getAmount(SayOptionEnum.rank_1)} MINION`,
+      label: `${getAmount(SayOptionEnum.rank_1)} Minion`,
     },
   ]
 

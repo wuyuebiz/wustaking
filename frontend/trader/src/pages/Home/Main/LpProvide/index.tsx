@@ -72,8 +72,8 @@ const LpProvide = ({
       <StyledCard>
         <SelectTab
           options={[
-            { value: LpProvideTypeEnum.provide, label: 'PROVIDE' },
-            { value: LpProvideTypeEnum.withdraw, label: 'WITHDRAW' },
+            { value: LpProvideTypeEnum.provide, label: 'Provide' },
+            { value: LpProvideTypeEnum.withdraw, label: 'Withdraw' },
           ]}
           onSelect={(value): void => {
             insertRouteParam('lpType', value)
@@ -94,7 +94,7 @@ const LpProvide = ({
                 invalidStakeForm || !provideFee || !!provideSubmitErrMsg
               }
             >
-              PROVIDE
+              Provide
             </AuthButton>
           </>
         ) : (
@@ -111,7 +111,7 @@ const LpProvide = ({
                 invalidUnStakeForm || !withdrawFee || !!withdrawSubmitErrMsg
               }
             >
-              WITHDRAW
+              Withdraw
             </AuthButton>
           </>
         )}

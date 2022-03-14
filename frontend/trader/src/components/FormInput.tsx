@@ -14,8 +14,8 @@ const StyledContainer = styled(View)`
 
 const StyledInputContainer = styled(Row)`
   flex: 1;
-  border-radius: 8px;
-  border: 2px solid rgba(255, 255, 255, 0.08);
+  border-radius: 3px;
+  border: 1px solid rgba(224, 224, 224, 1);
 `
 
 const StyledInput = styled.input`
@@ -29,7 +29,7 @@ const StyledInput = styled.input`
   min-width: 120px;
   color: ${COLOR.text};
   background-color: ${COLOR.gray._50};
-  border: 1px solid #00000050;
+  
   :read-only {
     background-color: ${COLOR.gray._100};
     cursor: not-allowed;
@@ -45,9 +45,9 @@ const StyledInput = styled.input`
   }
 `
 const StyledSuffixBox = styled(View)`
-  border-top-right-radius: 4px;
-  border-bottom-right-radius: 4px;
-  border: 1px solid #00000050;
+  border-top-right-radius: 3px;
+  border-bottom-right-radius: 3px;
+  border-left: 1px solid #e0e0e0;
   min-width: 80px;
   align-items: center;
   justify-content: center;
@@ -87,10 +87,10 @@ const FormInput = <T extends string>({
   let helperTextStyle
   const [onFocus, setOnFocus] = useState(false)
   if (isError) {
-    containerStyle.border = `2px solid ${COLOR.error}`
+    containerStyle.border = `1px solid ${COLOR.error}`
     helperTextStyle = COLOR.error
   } else if (onFocus) {
-    containerStyle.border = `2px solid ${COLOR.primary._400}`
+    containerStyle.border = `1px solid ${COLOR.primary._400}`
     helperTextStyle = COLOR.primary._400
   }
 
@@ -106,7 +106,7 @@ const FormInput = <T extends string>({
           onWheel={({ currentTarget }): void => {
             currentTarget.blur()
           }}
-          style={{ borderRadius: suffix ? '4px 0 0 4px' : 4 }}
+          style={{ borderRadius: suffix ? '3px 0 0 3px' : 3 }}
           onFocus={(): void => {
             !readOnly && setOnFocus(true)
           }}

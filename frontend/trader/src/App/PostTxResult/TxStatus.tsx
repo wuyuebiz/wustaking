@@ -3,9 +3,7 @@ import styled from 'styled-components'
 import _ from 'lodash'
 import { useRecoilValue } from 'recoil'
 import { IconUrgent } from '@tabler/icons'
-import animationData from 'images/cat_idle.json'
-import Lottie from 'react-lottie'
-
+import MINI_ANI from 'images/minion_cute.gif'
 import { COLOR, STYLE } from 'consts'
 
 import { Hr, LinkFinder } from 'components'
@@ -85,15 +83,7 @@ const PostTxResult = ({
               <IconUrgent size={60} color={COLOR.error} />
             </StyledIconBox>
           ) : postTxResult.status === PostTxStatus.DONE ? (
-            <Lottie
-              options={{
-                loop: true,
-                autoplay: true,
-                animationData,
-              }}
-              height={160}
-              width={160}
-            />
+            <img src={MINI_ANI} />
           ) : (
             <Loading size={100} />
           )}

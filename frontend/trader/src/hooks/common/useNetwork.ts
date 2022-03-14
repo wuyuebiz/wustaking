@@ -75,7 +75,7 @@ const useNetwork = (): {
     }
   }
 
-  const MINIONToken = whitelist.find((x) => x.symbol === 'MINION')! as TokenType
+  const MINIONToken = whitelist.find((x) => x.symbol === 'Minion')! as TokenType
 
   return {
     isMainnet,

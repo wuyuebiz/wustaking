@@ -89,7 +89,7 @@ const Wallet = (): ReactElement => {
   })
 
   const onClickCopyAddress = (): void => {
-    toast(`Copied MINION!`, {
+    toast(`Copied Minion!`, {
       position: 'top-center',
       autoClose: 2000,
       hideProgressBar: true,

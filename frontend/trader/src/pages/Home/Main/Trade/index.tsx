@@ -199,7 +199,7 @@ const Sell = ({
             onClick={onClickLimitOrderSell}
             disabled={invalidLoSellForm || !loFee || !!loSellSubmitErrMsg}
           >
-            SELL
+            Sell
           </AuthButton>
         </>
       ) : (
@@ -214,7 +214,7 @@ const Sell = ({
             onClick={onClickSell}
             disabled={invalidSellForm || !sellFee || !!sellSubmitErrMsg}
           >
-            SELL
+            Sell
           </AuthButton>
         </>
       )}
@@ -284,8 +284,8 @@ const Trade = ({
         <View style={{ flex: 1 }}>
           <SelectTab
             options={[
-              { value: TradeTypeEnum.buy, label: 'BUY' },
-              { value: TradeTypeEnum.sell, label: 'SELL' },
+              { value: TradeTypeEnum.buy, label: 'Buy' },
+              { value: TradeTypeEnum.sell, label: 'Sell' },
             ]}
             onSelect={(value): void => {
               insertRouteParam('tradeType', value)

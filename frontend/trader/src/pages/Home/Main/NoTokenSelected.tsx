@@ -1,9 +1,6 @@
 import { ReactElement } from 'react'
 import styled from 'styled-components'
-import Lottie from 'react-lottie'
-
-import animationData from 'images/cat_ball.json'
-
+import MINI_ANI from 'images/minion_cute.gif'
 import { View, FormText, Card } from 'components'
 
 const StyledContainer = styled(Card)`
@@ -14,13 +11,7 @@ const NoTokenSelected = (): ReactElement => {
   return (
     <StyledContainer>
       <View style={{ width: 300 }}>
-        <Lottie
-          options={{
-            loop: true,
-            autoplay: true,
-            animationData,
-          }}
-        />
+        <img src={MINI_ANI} alt=''/>
       </View>
       <FormText fontType="B16">Select a token to trade or provide</FormText>
     </StyledContainer>

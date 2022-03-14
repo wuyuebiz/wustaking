@@ -1,18 +1,9 @@
 import { ReactElement } from 'react'
-import Lottie from 'react-lottie'
-import animationData from 'images/loading.json'
+import animationData from 'images/banana.gif'
 
 const Loading = ({ size = 300 }: { size?: number }): ReactElement => {
   return (
-    <Lottie
-      options={{
-        loop: true,
-        autoplay: true,
-        animationData,
-      }}
-      height={size}
-      width={size}
-    />
+    <img src={animationData} width={size}/>
   )
 }
 

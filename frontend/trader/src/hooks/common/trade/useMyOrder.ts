@@ -171,11 +171,8 @@ const useMyOrder = ({
     toBuyContractOrDenom,
     tokenForBuySymbol,
     tokenToBuySymbol,
-
     limitOrderList,
-
     setOrderId,
-
     fee,
     invalidForm,
     submitErrMsg,

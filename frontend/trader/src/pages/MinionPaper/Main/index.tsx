@@ -1,6 +1,5 @@
 import { ReactElement } from 'react'
 import styled from 'styled-components'
-import catFootprintPng from 'images/cat_footprint.png'
 import QrCode from 'qrcode.react'
 import { CopyToClipboard } from 'react-copy-to-clipboard'
 import { toast } from 'react-toastify'
@@ -18,7 +17,6 @@ const StyledContainer = styled(View)`
 `
 
 const StyledCard = styled(Card)`
-  background-image: url(${catFootprintPng});
   background-size: cover;
 `
 
@@ -42,10 +40,10 @@ const StyledDesc = styled(FormText)`
 const Main = (): ReactElement => {
   return (
     <StyledContainer>
-      <StyledMainTitle fontType="B32">MINION paper</StyledMainTitle>
+      <StyledMainTitle fontType="B32">Minion paper</StyledMainTitle>
       <StyledCard>
         <StyledSection>
-          <StyledSubTitle fontType="B24">What the MINION</StyledSubTitle>
+          <StyledSubTitle fontType="B24">What the Minion</StyledSubTitle>
           <StyledDesc>
             <LinkA link="https://github.com/wuyuebiz/wustaking">
               <FormText fontType={'R18'} color={COLOR.primary._400}>
@@ -56,12 +54,12 @@ const Main = (): ReactElement => {
           <StyledDesc>
             - Token,Lp,Pair contracts are based on The Terraswap factory
           </StyledDesc>
-          <StyledDesc>- MINION was made by a dev who loves the Terra</StyledDesc>
+          <StyledDesc>- Minion was made by a dev who loves the Terra</StyledDesc>
         </StyledSection>
 
         <StyledSection>
           <StyledSubTitle fontType="B24">
-            Token Distribution plan for MINION V1
+            Token Distribution plan for Minion V1
           </StyledSubTitle>
           <StyledDesc fontType="B20">100M Total supply</StyledDesc>
           <StyledDesc>
@@ -74,9 +72,9 @@ const Main = (): ReactElement => {
         </StyledSection>
 
         <StyledSection>
-          <StyledSubTitle fontType="B24">Roadmap for MINION V1</StyledSubTitle>
+          <StyledSubTitle fontType="B24">Roadmap for Minion V1</StyledSubTitle>
           <StyledDesc>
-            <IconSquareCheck color={COLOR.primary._600} /> SayMINION
+            <IconSquareCheck color={COLOR.primary._600} /> SayMinion
           </StyledDesc>
           <StyledDesc>
             <IconSquareCheck color={COLOR.primary._600} /> LpTower
@@ -101,7 +99,7 @@ const Main = (): ReactElement => {
 
         <StyledSection>
           <StyledSubTitle fontType="B24">Keeping token prices</StyledSubTitle>
-          <StyledDesc fontType="B18">1. SayMINION</StyledDesc>
+          <StyledDesc fontType="B18">1. SayMinion</StyledDesc>
           <StyledDesc>
             {'-> Burn MINION through SayMINION with various events'}
           </StyledDesc>
@@ -113,7 +111,7 @@ const Main = (): ReactElement => {
         </StyledSection>
 
         <StyledSection>
-          <StyledSubTitle fontType="B24">MINION V2?</StyledSubTitle>
+          <StyledSubTitle fontType="B24">Minion V2?</StyledSubTitle>
           <StyledDesc>
             - Supporting token swap independently without the Terraswap
           </StyledDesc>

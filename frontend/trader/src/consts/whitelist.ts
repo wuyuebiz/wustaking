@@ -62,11 +62,11 @@ import {
 
 const tokenInfo: Record<TokenKeyEnum, TokenInfoType> = {
   [TokenKeyEnum.MINION]: {
-    symbol: 'MINION',
-    name: 'MINION Token',
+    symbol: 'Minion',
+    name: 'Minion Token',
     logo: MIAWLogo,
     contractOrDenom:
-      'terra1vtr50tw0pgqpes34zqu60n554p9x4950wk8f63' as ContractAddr,
+      'terra13yu4fnc4p7lrenplschvkt5wjsn4mx6exqy22u' as ContractAddr,
   },
   [TokenKeyEnum.UST]: {
     symbol: 'UST',
@@ -1027,12 +1027,12 @@ const testnetTokenList: TokenType[] = [
   {
     ...tokenInfo[TokenKeyEnum.MINION],
     contractOrDenom:
-      'terra1pvl9dymgf5nahrc85yqqucytlhjk0xv3wnztca' as ContractAddr, //ok
+      'terra13yu4fnc4p7lrenplschvkt5wjsn4mx6exqy22u' as ContractAddr, //ok
     pairList: [
       {
         dex: DexEnum.terraswap,
         base: TokenKeyEnum.UST,
-        pair: 'terra1gw5pacpvhswlv5twgmgfjrj9ys5gvrjuxgdsk7' as ContractAddr, // wrong
+        pair: 'terra13ms56et4nchgeq0l4e7sjxx8wugguptqjn53re' as ContractAddr, // wrong
         lp: 'terra18e4mudt7kdml6lma5fhsydszxpexmxf2ez9hpn' as ContractAddr, // ok
       },
     ],
@@ -1083,7 +1083,7 @@ const mainnetLpStakingList: LpStakingType[] = [
   {
     tokenLogo: MIAWLogo,
     tokenContract:
-      'terra1vtr50tw0pgqpes34zqu60n554p9x4950wk8f63' as ContractAddr,
+      'terra13yu4fnc4p7lrenplschvkt5wjsn4mx6exqy22u' as ContractAddr,
     nativeDenomLogo: USTLogo,
     nativeDenom: TokenDenomEnum.uusd,
     lpContract: 'terra1hvz34zmk4h6k896t94vd8d5qjdchhnkdndunzx' as ContractAddr,
@@ -1096,12 +1096,12 @@ const testnetLpStakingList: LpStakingType[] = [
   {
     tokenLogo: MIAWLogo,
     tokenContract:
-      'terra1pvl9dymgf5nahrc85yqqucytlhjk0xv3wnztca' as ContractAddr, // ok
+      'terra13yu4fnc4p7lrenplschvkt5wjsn4mx6exqy22u' as ContractAddr, // ok
     nativeDenomLogo: USTLogo,
     nativeDenom: TokenDenomEnum.uusd,
     lpContract: 'terra18e4mudt7kdml6lma5fhsydszxpexmxf2ez9hpn' as ContractAddr, // ok
-    lpPair: 'terra1gw5pacpvhswlv5twgmgfjrj9ys5gvrjuxgdsk7' as ContractAddr, // wrong
-    lpStaking: 'terra1j50hhzmg6rm5rm7vqljgc3e40d33mkj334x6t7' as ContractAddr, //ok
+    lpPair: 'terra13ms56et4nchgeq0l4e7sjxx8wugguptqjn53re' as ContractAddr, // wrong
+    lpStaking: 'terra1z5y0xwtezppa9ke5vp6xsw38eq8zwepmzqa3g6' as ContractAddr, //ok
   },
 ]
 

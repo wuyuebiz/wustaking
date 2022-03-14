@@ -47,7 +47,7 @@ const Contents = ({ MINIONToken }: { MINIONToken: TokenType }): ReactElement => 
   return (
     <StyledContainer>
       <StyledContentsLayout>
-        <FormText fontType="B24">MINION Board</FormText>
+        <FormText fontType="B24">Minion Board</FormText>
         <View style={{ flex: 1 }}>
           <TopInfo MINIONToken={MINIONToken} />
           <InputMemo sayMiawReturn={sayMINIONReturn} />
