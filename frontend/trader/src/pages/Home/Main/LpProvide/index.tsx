@@ -94,7 +94,7 @@ const LpProvide = ({
                 invalidStakeForm || !provideFee || !!provideSubmitErrMsg
               }
             >
-              Provide
+              Provide1
             </AuthButton>
           </>
         ) : (
@@ -111,7 +111,7 @@ const LpProvide = ({
                 invalidUnStakeForm || !withdrawFee || !!withdrawSubmitErrMsg
               }
             >
-              Withdraw
+              Withdraw1
             </AuthButton>
           </>
         )}

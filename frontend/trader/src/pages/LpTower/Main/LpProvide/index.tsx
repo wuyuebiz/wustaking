@@ -30,6 +30,8 @@ const SelectedLpProvide = ({
 }: {
   selectedLpOfLp: LpofLpType
 }): ReactElement => {
+
+  console.log(selectedLpOfLp, '===selectedLpOfLp===')
   const { insertRouteParam, routeParams } = useRoute<RoutePath.lpTower>()
   const type = routeParams?.lpProvideType || LpProvideTypeEnum.provide
 

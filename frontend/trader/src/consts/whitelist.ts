@@ -1033,7 +1033,7 @@ const testnetTokenList: TokenType[] = [
         dex: DexEnum.terraswap,
         base: TokenKeyEnum.UST,
         pair: 'terra13ms56et4nchgeq0l4e7sjxx8wugguptqjn53re' as ContractAddr, // wrong
-        lp: 'terra18e4mudt7kdml6lma5fhsydszxpexmxf2ez9hpn' as ContractAddr, // ok
+        lp: 'terra18ep0a23yayzr9ql0upcws52r0j4uddd9gaps87' as ContractAddr, // ok
       },
     ],
   },
@@ -1099,9 +1099,9 @@ const testnetLpStakingList: LpStakingType[] = [
       'terra13yu4fnc4p7lrenplschvkt5wjsn4mx6exqy22u' as ContractAddr, // ok
     nativeDenomLogo: USTLogo,
     nativeDenom: TokenDenomEnum.uusd,
-    lpContract: 'terra18e4mudt7kdml6lma5fhsydszxpexmxf2ez9hpn' as ContractAddr, // ok
+    lpContract: 'terra18ep0a23yayzr9ql0upcws52r0j4uddd9gaps87' as ContractAddr, // ok
     lpPair: 'terra13ms56et4nchgeq0l4e7sjxx8wugguptqjn53re' as ContractAddr, // wrong
-    lpStaking: 'terra1z5y0xwtezppa9ke5vp6xsw38eq8zwepmzqa3g6' as ContractAddr, //ok
+    lpStaking: 'terra1umsa66au0ytxdpdu2gc4mq7rh80was4e2hvpnl' as ContractAddr, //ok
   },
 ]
 

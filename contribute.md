@@ -76,18 +76,18 @@ terra13yu4fnc4p7lrenplschvkt5wjsn4mx6exqy22u
       "1000000000"
     ]
   ],
-  "wut_lp_token": "terra18e4mudt7kdml6lma5fhsydszxpexmxf2ez9hpn",
+  "wut_lp_token": "terra18ep0a23yayzr9ql0upcws52r0j4uddd9gaps87",
   "wut_token": "terra13yu4fnc4p7lrenplschvkt5wjsn4mx6exqy22u"
 }
 ```
 
 ```
 creator	
-terra1ccgfzama5y26es8xhlhcswtp76e9jcddhqhchl
+terra1t3gt92tpgm7dzqcf2dp3n3gncvzfjgech84h8u
 admin	
-code_id	52624
+code_id	53035
 contract_address	
-terra1z5y0xwtezppa9ke5vp6xsw38eq8zwepmzqa3g6
+terra1umsa66au0ytxdpdu2gc4mq7rh80was4e2hvpnl
 ```
 
 ### mint
