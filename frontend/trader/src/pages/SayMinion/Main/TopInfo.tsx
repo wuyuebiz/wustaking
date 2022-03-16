@@ -13,6 +13,7 @@ const StyledContainer = styled(View)`
   background-color: ${COLOR.primary._600};
   padding: 10px;
   border-radius: 8px;
+  margin: 20px;
 `
 
 const StyledTotalBurnedBox = styled(Row)`

@@ -11,7 +11,7 @@ const NoTokenSelected = (): ReactElement => {
   return (
     <StyledContainer>
       <View style={{ width: 300 }}>
-        <img src={MINI_ANI} alt=''/>
+        <img src={MINI_ANI} alt='' />
       </View>
       <FormText fontType="B16">Select a token to trade or provide</FormText>
     </StyledContainer>

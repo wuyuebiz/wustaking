@@ -13,6 +13,7 @@ import SendForm from './SendForm'
 
 const StyledCard = styled(Card)`
   flex: 1;
+  margin-top: 20px;
   @media ${STYLE.media.tablet} {
   }
 `

@@ -196,7 +196,7 @@ const LpStakingItem = ({
                 </FormText>
               </View>
               <Button
-                style={{ width: 160, padding: '0 10px' }}
+                style={{ width: 160 }}
                 onClick={onClickClaim}
               >
                 Claim

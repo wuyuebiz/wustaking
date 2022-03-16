@@ -13,10 +13,13 @@ import {
 } from 'hooks/common/sayMinion/useSayMinion'
 import { Token } from 'types'
 
-const StyledContainer = styled(View)``
+const StyledContainer = styled(View)`
+  margin: 20px;
+`
 
 const StyledSelectBox = styled(Row)`
   align-items: center;
+  margin-bottom: 10px;
   justify-content: space-between;
   @media ${STYLE.media.mobile} {
     flex-direction: column-reverse;
@@ -88,7 +91,7 @@ const InputMemo = ({
             </View>
           </StyledSelectBox>
           <StyledInputBox>
-            <View style={{ flex: 3 }}>
+            <View style={{ flex: 3, marginRight: '10px' }}>
               <FormInput
                 inputProps={{
                   value: inputMemo,
