@@ -1,4 +1,4 @@
-# Miaw Trader
+# Minion Trader
 
 ## Instructions
 
