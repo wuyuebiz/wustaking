@@ -13,9 +13,3 @@ $ npm install
 ```bash
 $ npm start
 ```
-
-## License
-
-This software is licensed under the Apache 2.0 license. Read more about it [here](./LICENSE).
-
-© 2021 Miaw-trader | Email : miawtrader@gmail.com
